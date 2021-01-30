@@ -1,0 +1,76 @@
+@media (max-width:1048px){
+    label.logo{
+        font-size:32px;
+        padding-left: 40px;
+    }
+    nav ul{
+        margin-right: 15px;
+    }
+    nav a{
+        font-size:15px;
+    }
+    #naslov{
+        width: 30%;
+        left:5%;
+    }
+}
+@media(max-width:850px){
+    nav #icon{
+        display: block;
+        font-size:30px;
+    }
+    nav ul{
+        position: fixed;
+        z-index: 1;
+        width:100%;
+        height: 100vh;
+        background: #2f3640;
+        top:80px;
+        left:-100%;
+        text-align: center;
+        transition:all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size:20px;
+    }
+    a.activ,a:hover{
+        border:none;
+        color:#3498db;
+    }
+    nav ul.show{
+        left:0;
+    }
+    #naslov{
+        font-size: 30px;
+    }
+    #cv{
+        font-size: 18px;
+    }
+}
+@media(max-width:426px){
+    #naslov{
+        width: 70%;
+        background-color: rgba(0,0,0, 0.85);
+        padding: 10px;
+        border-radius: 10px;
+    }
+    #cv{
+        width:55%; 
+    } 
+}
+@media(max-width:376px){
+    label.logo{
+        font-size:28px;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    nav #icon{
+        font-size: 24px;
+        margin-right: 25px;
+    } 
+}
