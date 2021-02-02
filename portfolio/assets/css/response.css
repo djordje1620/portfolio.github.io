@@ -13,6 +13,16 @@
         width: 30%;
         left:5%;
     }
+    .center{
+        width: 95%;
+    }
+    .txt{
+        padding: 10px;
+    }
+    .box{
+        flex:30%;
+        height: 350px;
+    }
 }
 @media(max-width:850px){
     nav #icon{
@@ -51,6 +61,23 @@
     #cv{
         font-size: 18px;
     }
+    .blok-ab{
+        display: block;
+    }
+    .box{
+        width: 20%;
+        height: 150px;
+        float: left;
+    }
+    .txt p{
+        font-size: 16px;
+        padding: 5px;
+        box-shadow:none;
+        float: right;
+    }
+    #blok1{
+        height:300px;
+     }
 }
 @media(max-width:426px){
     #naslov{
@@ -62,6 +89,17 @@
     #cv{
         width:55%; 
     } 
+    .box{
+        float: none;
+        width: 40%;
+        margin: 0 auto;
+    }
+    .txt p{
+        float: none;
+    }
+    #blok1{
+        height:600px;
+     }
 }
 @media(max-width:376px){
     label.logo{
