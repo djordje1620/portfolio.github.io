@@ -140,12 +140,19 @@ nav #icon{
     letter-spacing: 8px;
     font-weight: bold;
 }
+h2#rgba{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 400px;
+    border-radius: 0px 0px 15px 15px;
+    padding:10px 0px;
+    margin: 0px auto;
+}
 .none-uppercase{
     text-transform: none;
 }
 #blok2{
     background:linear-gradient(180deg, #b039e3,#000); 
-    height: 1350px; 
+    height: 1400px; 
 }
 .blok-ab{
     display: flex;
@@ -294,10 +301,63 @@ span.html{
     flex-direction: column;
     align-items: flex-end;
 }
+#blok3{
+    background-image: url(../img/pozadina2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:600px;
+    width: 100%;
+}
+.carousel-wrapper {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+  }
+.owl-carousel .owl-nav {
+    overflow: hidden;
+    height: 0px;
+  }
+.owl-theme{
+      margin: 120px auto;
+  }
+.owl-carousel .item {
+    text-align: center;
+  }
+.item{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+  }
+.owl-carousel .nav-button {
+    height: 50px;
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+    pointer-events: none;
+    opacity: 0.25;
+  }
+.owl-carousel .owl-prev {
+    left: -35px;
+  }
 
-
-
-
-
-
-
+.owl-carousel .owl-next {
+    right: -35px;
+  }
+.owl-theme .owl-nav [class*=owl-] {
+    color: #ffffff;
+    font-size: 39px;
+    background: #000000;
+    border-radius: 5px;
+  }
