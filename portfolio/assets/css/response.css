@@ -87,6 +87,12 @@
      .blok_s{
          width: 25%;
      }
+     #blok2{
+        height:1700px;
+     }
+     .naslov1 h2{
+         font-size: 30px;
+     }
 }
 @media(max-width:426px){
     #naslov{
@@ -107,7 +113,7 @@
         float: none;
     }
     #blok1{
-        height:600px;
+        height:550px;
      }
      .hidden1{
         display: none;
@@ -129,7 +135,7 @@
     }
     #blok2{
         background:linear-gradient(180deg, #b039e3,#000); 
-        height: 700px; 
+        height: 2000px; 
     }
 }
 @media(max-width:386px){
