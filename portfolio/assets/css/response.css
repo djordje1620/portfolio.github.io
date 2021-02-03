@@ -113,10 +113,26 @@
         display: none;
     }
     .blok_s{
-        width: 40%;
+        width: 51%;
+        margin:5px auto;
+    }
+    .fa-html5,.fa-css3-alt,.fa-search,.fa-js,.fa-php,.fa-database,.fa-react,.fa-python{
+        font-size: 60px;
+        padding: 5px;
+        height:60px;
+        margin:4px auto 4px auto;
+    }
+    .blok_s{
+        width: 60%;
+        margin: 10px;
+        height: 150px;
+    }
+    #blok2{
+        background:linear-gradient(180deg, #b039e3,#000); 
+        height: 700px; 
     }
 }
-@media(max-width:376px){
+@media(max-width:386px){
     label.logo{
         font-size:28px;
         padding-left: 20px;
@@ -126,21 +142,7 @@
         font-size: 24px;
         margin-right: 25px;
     } 
-    .blok_s{
-        width: 60%;
-        margin: 10px;
-        height: 150px;
-    }
-    #blok2{
-        height: 900px;
-    }
-    .fa-html5,.fa-css3-alt,.fa-search,.fa-js,.fa-php,.fa-database,.fa-react,.fa-python{
-        font-size: 60px;
-        padding: 5px;
-        height:60px;
-        margin:4px auto 4px auto;
-    }
-    .hidden2{
-        display: none;
+    .box{
+        width: 50%;
     }
 }
