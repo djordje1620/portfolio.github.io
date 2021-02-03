@@ -78,6 +78,15 @@
     #blok1{
         height:300px;
      }
+     #flex{
+         display: flex;
+     }
+     .hidden{
+         display: none;
+     }
+     .blok_s{
+         width: 25%;
+     }
 }
 @media(max-width:426px){
     #naslov{
@@ -100,6 +109,12 @@
     #blok1{
         height:600px;
      }
+     .hidden1{
+        display: none;
+    }
+    .blok_s{
+        width: 40%;
+    }
 }
 @media(max-width:376px){
     label.logo{
@@ -111,4 +126,21 @@
         font-size: 24px;
         margin-right: 25px;
     } 
+    .blok_s{
+        width: 60%;
+        margin: 10px;
+        height: 150px;
+    }
+    #blok2{
+        height: 900px;
+    }
+    .fa-html5,.fa-css3-alt,.fa-search,.fa-js,.fa-php,.fa-database,.fa-react,.fa-python{
+        font-size: 60px;
+        padding: 5px;
+        height:60px;
+        margin:4px auto 4px auto;
+    }
+    .hidden2{
+        display: none;
+    }
 }

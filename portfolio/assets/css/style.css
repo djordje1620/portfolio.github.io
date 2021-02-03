@@ -5,6 +5,7 @@
     margin: 0;
     font-family: 'Catamaran', sans-serif;
     text-decoration: none;
+    list-style-type: none;
 }
 #pozadina{
     background-image: url("../img/pozadina2.jpg");
@@ -131,16 +132,17 @@ nav #icon{
     width: 80%;
 }
 .naslov1 h2{
-    padding: 30px 0px 50px 0px;
+    padding: 40px 0px;
     color:white;
     text-align: center;
-    font-size: 36px;
+    font-size: 40px;
     text-transform: uppercase;
-    letter-spacing: 7px;
+    letter-spacing: 8px;
+    font-weight: bold;
 }
 #blok2{
     background:linear-gradient(180deg, #b039e3,#000); 
-    height: 600px; 
+    height: 900px; 
 }
 .blok-ab{
     display: flex;
@@ -174,3 +176,92 @@ nav #icon{
     color:#99a80b;
     font-weight: bold;
 }
+.space_around{
+    justify-content: space-around;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+.blok_s{
+    width: 20%;
+    height: 230px;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px 5px 20px 20px;
+    margin:30px 20px;
+}
+.blok_s:hover{
+    box-shadow: 2px 2px 2px 2px;
+}
+.fa-html5,.fa-css3-alt,.fa-search,.fa-js,.fa-php,.fa-database,.fa-react,.fa-python{
+    font-size: 100px;
+    padding: 20px;
+    color:#99a80b;
+    margin: 0px auto 8px auto;
+    height: 100px;
+    box-shadow: 3px 2px 1px  rgb(153, 168, 11, 0.7);
+}
+.blok_s h3{
+    color:#99a80b;
+    text-transform: uppercase;
+}
+.proc{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    background:#99a80b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skilss{
+    width: 70%;
+}
+.skilss li{
+    margin: 10px 0;
+}
+.skilss h3{
+    text-align: center;
+    padding-bottom: 10px;
+ 
+}
+.bar{
+    background-color: #fff;
+    display: block;
+    height: 4px;
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius:3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #fff;
+}
+.bar span{
+    height: 4px;
+    float: left;
+    background-color: #99a80b;
+}
+span.html{
+    width:90%;
+}
+.css3,.sql{
+    width:75%;
+}
+.seo{
+    width:74%;
+}
+.js,.php{
+    width:35%;
+}
+.react,.python{
+    width:20%;
+}
+
+
+
+
+
+
