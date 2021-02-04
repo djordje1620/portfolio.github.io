@@ -26,6 +26,9 @@
     .owl-theme .owl-nav [class*=owl-] {
         display: none;
       }
+    #wid{
+          width:87%;
+      }
 }
 @media(max-width:850px){
     nav #icon{
