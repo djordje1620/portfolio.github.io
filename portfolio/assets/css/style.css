@@ -151,7 +151,7 @@ h2#rgba{
     text-transform: none;
 }
 #blok2{
-    background:linear-gradient(180deg, #b039e3,#000); 
+    background:linear-gradient(180deg, rgb(176, 57, 227),#000); 
     height: 1400px; 
 }
 .blok-ab{
@@ -282,7 +282,7 @@ span.html{
 }
 .blok-max h4{
     border: 5px solid black;
-    background: #99a80b;
+    background: rgb(153, 168, 11);
     color:#000;
     width: 200px;
     padding: 5px;
@@ -320,12 +320,13 @@ span.html{
   }
 .owl-theme{
       margin: 120px auto;
-      background-color: rgba(0, 0, 0, 0.9);
+      background-color: rgba(0, 0, 0,0.9);
       align-items: center;
       justify-content: center;
       display: flex;
       padding:20px;
       border-radius: 2px 2px 8px 8px;
+      box-shadow: 3px 4px 6px 7px rgba(176, 57, 227,0.5);
   }
 .owl-carousel .item {
     text-align: center;
@@ -334,7 +335,8 @@ span.html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+    display: block;
+}
 .owl-dots{
     display: none;
 }
@@ -349,14 +351,37 @@ span.html{
     align-items: center;
   }
 .owl-carousel .owl-prev {
-    left: -35px;
+    left: -40px;
   }
 .owl-carousel .owl-next {
-    right: -35px;
+    right: -40px;
 }
 .owl-theme .owl-nav [class*=owl-] {
     color: #ffffff;
     font-size: 50px;
     background: #000000;
     border-radius: 5px;
+  }
+  .overlay{
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.93); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .7s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px 0px;
+    text-align: center;
+  }
+  .item:hover .overlay {
+    opacity: 1;
+  }
+  span.bgcl{
+      color:#99a80b;
+  }
+  .overlay p{
+    font-size: 17px;
   }
