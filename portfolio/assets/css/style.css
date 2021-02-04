@@ -123,7 +123,7 @@ nav #icon{
     cursor: pointer;
     transition: 0.5s;
 }
-#blok1{
+.blok1{
    background:linear-gradient(180deg, #000,#b039e3); 
    height:600px;
 }
@@ -386,5 +386,14 @@ span.html{
     font-size: 17px;
   }
   #blok4{
-      
+      background-image: url(../img/poz2.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height:600px;
+      width: 80%;
+      margin: 0px auto
   }
+.padding_{
+    padding: 100px 0px;
+}
