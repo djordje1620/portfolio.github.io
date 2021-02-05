@@ -125,7 +125,7 @@ nav #icon{
     transition: 0.5s;
 }
 .blok1{
-   background:linear-gradient(180deg, #000,#b039e3); 
+   background:linear-gradient(180deg, #000,#5d5c5e); 
 }
 .center{
     margin: 0 auto;
@@ -151,7 +151,7 @@ h2#rgba{
     text-transform: none;
 }
 #blok2{
-    background:linear-gradient(180deg, rgb(176, 57, 227),#000); 
+    background:linear-gradient(180deg, #5d5c5e,#000); 
     height: 1400px; 
 }
 .blok-ab{
@@ -395,8 +395,8 @@ span.html{
 .blok1 ul li{
     margin:auto;
 }
-.fa-phone,.fa-mail-bulk,.fa-map-marker-alt{
-    padding: 5px;
+.fa-phone,.fa-mail-bulk,.fa-map-marker-alt,.fa-sitemap,.fa-sass,.fa-css3{
+    padding: 10px;
     font-size: 20px;
     color:#99a80b;
     cursor: pointer;
@@ -441,7 +441,7 @@ input,textarea,button{
     width: 90%;
     margin: 10px 0px;
     padding: 5px;
-    background: rgb(59, 54, 54);
+    background: #3b3636;
     border-radius: 10px;
     border:2px solid #99a80b;
     color:white;
@@ -464,4 +464,15 @@ textarea{
 ::placeholder {
     color: white;
     font-size:17px;
+}
+footer{
+    width: 100%;
+    background:#3b3636;
+    display: flex;
+    border-top:3px solid #99a80b;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    font-size:21px;
+    color:#fff;
 }
