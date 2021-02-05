@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Jockey+One&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -125,7 +126,6 @@ nav #icon{
 }
 .blok1{
    background:linear-gradient(180deg, #000,#b039e3); 
-   height:600px;
 }
 .center{
     margin: 0 auto;
@@ -385,15 +385,80 @@ span.html{
   .overlay p{
     font-size: 17px;
   }
-  #blok4{
-      background-image: url(../img/poz2.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height:600px;
-      width: 80%;
-      margin: 0px auto
-  }
 .padding_{
-    padding: 100px 0px;
+    padding: 15px 0px;
+    background:rgb(3, 3, 3);
+}
+.blok1 ul{
+    display: flex;
+}
+.blok1 ul li{
+    margin:auto;
+}
+.fa-phone,.fa-mail-bulk,.fa-map-marker-alt{
+    padding: 5px;
+    font-size: 20px;
+    color:#99a80b;
+    cursor: pointer;
+}
+ul li i a{
+    padding:5px;
+    font-family: 'Roboto', sans-serif;
+}
+.blok1 .center p{
+    padding: 10px;
+    color:white;
+    text-align: center;
+    font-size: 18px;
+}
+#background{
+    background-image: url(../img/poz2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:700px;
+    width: 100%;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact{
+    padding: 20px;
+    width: 35%;
+    background: black;
+	box-shadow:0 0 19px #9e5808, 0 0 14px rgb(91, 141, 9), 0 0 35px #d3930b;
+    text-align: center;
+    color:white;
+    font-size: 26px;
+    border-radius: 15px;
+}
+input,textarea,button{
+    width: 90%;
+    margin: 10px 0px;
+    padding: 5px;
+    background: rgb(59, 54, 54);
+    border-radius: 10px;
+    border:2px solid #99a80b;
+    color:white;
+    font-size:18px;
+}
+button{
+    width: 60px;
+    cursor: pointer;
+    margin: 0px;
+    padding: 2px;
+    background-color: black;
+}
+textarea{
+    height: 100px;
+}
+.fa-paper-plane{
+    color: white;
+    font-size:25px;
+}
+::placeholder {
+    color: white;
+    font-size:17px;
 }

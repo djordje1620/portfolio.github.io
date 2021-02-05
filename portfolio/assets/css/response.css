@@ -81,9 +81,6 @@
         box-shadow:none;
         float: right;
     }
-    .blok1{
-        height:300px;
-     }
      #flex{
          display: flex;
      }
@@ -106,6 +103,12 @@
         padding:10px 0px;
         margin: 0px auto;
      }
+     .fa-phone,.fa-mail-bulk,.fa-map-marker-alt{
+        font-size: 15px;
+    }
+    #contact{
+        width: 60%;
+    }
 }
 @media(max-width:590px){
     #naslov{
@@ -125,9 +128,6 @@
     .txt p{
         float: none;
     }
-    .blok1{
-        height:550px;
-     }
      .hidden1{
         display: none;
     }
@@ -149,6 +149,42 @@
     #blok2{ 
         height: 1650px; 
     }
+    #blok3{
+        height: 500px;
+    }
+    .fa-phone,.fa-mail-bulk,.fa-map-marker-alt{
+        font-size: 12px;
+    }
+    .blok1 .center p{
+        padding: 5px;
+        font-size: 16px;
+    }
+    #contact{
+        width: 80%;
+    }
+    #background{
+        height: 500px;
+    }
+    .re-center{
+        width: 100%;
+    }
+    input,textarea{
+        width: 100%;
+        margin: 5px 0px;
+        background: rgb(59, 54, 54);
+        border-radius: 10px;
+        color:white;
+        font-size:16px;
+    }
+    button{
+        width: 50px;
+    }
+    ::placeholder {
+        font-size:15px;
+    }
+    #contact h2{
+        font-size: 26px;
+    }
 }
 @media(max-width:397px){
     label.logo{
@@ -165,5 +201,14 @@
     }
     #blok2{ 
         height: 1800px; 
+    }
+    .fa-phone,.fa-mail-bulk,.fa-map-marker-alt{
+        padding: 0px;
+    }
+    .blok1 ul li{
+        margin:1px;
+    }
+    .blok1 .center p{
+        font-size: 14px;
     }
 }
