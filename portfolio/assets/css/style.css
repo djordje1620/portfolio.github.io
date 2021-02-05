@@ -405,6 +405,9 @@ ul li i a{
     padding:5px;
     font-family: 'Roboto', sans-serif;
 }
+ul li i a:hover{
+    color:#b039e3;
+}
 .blok1 .center p{
     padding: 10px;
     color:white;
