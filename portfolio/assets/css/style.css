@@ -177,7 +177,6 @@ h2#rgba{
     text-align: justify;
 }
 .txt p{
-    font-size: 20px;
     color:white;
     padding: 10px;
     box-shadow:20px 20px 10px black; 
@@ -401,18 +400,16 @@ span.html{
     color:#99a80b;
     cursor: pointer;
 }
-ul li i a{
+ul li i span{
     padding:5px;
     font-family: 'Roboto', sans-serif;
-}
-ul li i a:hover{
-    color:#b039e3;
 }
 .blok1 .center p{
     padding: 10px;
     color:white;
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
+    text-align: justify;
 }
 #background{
     background-image: url(../img/poz2.jpg);
@@ -469,10 +466,43 @@ footer{
     width: 100%;
     background:#3b3636;
     display: flex;
-    border-top:3px solid #99a80b;
+    border-top:3px solid #98a80b;
     justify-content: center;
     align-items: center;
     padding: 10px 0px;
     font-size:21px;
     color:#fff;
+}
+#strelica{
+    position:fixed;
+    right: 2%;
+    bottom: 3%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 100%;
+    background: rgba(152, 168, 11, 0.5);
+}
+#strelica:hover{
+    background: #98a80be6;
+}
+#strelica a i{
+    text-decoration: none;
+    color:black;
+    padding: 12px;
+    font-size: 29px;
+}
+#dm{
+    position: absolute;
+    display: flex;
+    right: 2%;
+    bottom:20%;
+    padding: 10px;
+    background:rgba(0,0,0,0.3);
+    flex-direction: column;
+}
+.fa-instagram,.fa-facebook-f,.fa-twitter,.fa-linkedin-in{
+    padding: 5px 0px;
+    color:rgba(79, 11, 168, 0.6);
+    font-size: 24px;
 }

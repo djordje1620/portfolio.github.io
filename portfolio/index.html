@@ -15,19 +15,24 @@
             $('#icon').click(function(){
                 $('ul').toggleClass('show')
             });
+        });   
+        $(document).ready(function(){
+            $('.icon1').click(function(){
+                $('ul').toggleClass('show')
+            });
         });     
     </script>
 </head>
 <body>
     <div id="pozadina">
         <nav>
-            <a href="index.html"><label class="logo">&ltMarkovićĐ&gt</label></a>
+            <a href="index.html" name="logo" ><label class="logo">&ltMarkovićĐ&gt</label></a>
             <ul>
-                <li><a class="activ" href="#">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="activ icon1" href="#">Home</a></li>
+                <li><a href="#About" class="icon1">About</a></li>
+                <li><a href="#Skills" class="icon1">Skills</a></li>
+                <li><a href="#projects" class="icon1">Projects</a></li>
+                <li><a href="#contact" class="icon1">Contact</a></li>
             </ul>
             <label id="icon">
                 <i class="fas fa-bars"></i>
@@ -43,6 +48,15 @@
             <div id="cv">
                 <p>Download CV</p>
             </div>
+        </div>
+        <div id="dm">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div id="strelica">
+            <a href="#logo"><i class="fas fa-arrow-up"></i></a>
         </div>
     </div>
     <div class="blok1">
@@ -201,13 +215,13 @@
         <div class="center">
             <ul>
                 <li>
-                    <i class="fas fa-phone"><a>+381654969911</a></i>
+                    <i class="fas fa-phone"><span>+381654969911</span></i>
                 </li>
                 <li>
-                    <i class="fas fa-mail-bulk"><a>mdj3@gmail.com</a></i>
+                    <i class="fas fa-mail-bulk"><span>mdj3@gmail.com</span></i>
                 </li>
                 <li>
-                    <i class="fas fa-map-marker-alt"><a>Nemanjina 71</a></i>
+                    <i class="fas fa-map-marker-alt"><span>Nemanjina 71</span></i>
                 </li>
             </ul>
             <p>Please feel free to contact me if you have any questions or comments. You can do so by filling out contact form, via social media or the information listed below.</p>
@@ -224,7 +238,6 @@
                     <button type="submit"><i class="far fa-paper-plane"></i></button>
                 </div>
             </div>
-            
         </div>
     </div>
     <footer>
