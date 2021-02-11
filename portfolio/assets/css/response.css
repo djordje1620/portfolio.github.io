@@ -109,6 +109,15 @@
     #contact{
         width: 60%;
     }
+    .fa-instagram,.fa-facebook-f,.fa-twitter,.fa-linkedin-in{
+        padding: 0px 4px;
+        font-size: 20px;
+    }
+    .fa-instagram:hover,.fa-facebook-f:hover,.fa-twitter:hover,.fa-linkedin-in:hover{
+        color:#98a80be6;
+        transform:translateY(5px);
+        font-size: 24px;
+    }
 }
 @media(max-width:590px){
     #naslov{

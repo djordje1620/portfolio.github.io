@@ -365,7 +365,7 @@ span.html{
     position: absolute; 
     bottom: 0; 
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.93); /* Black see-through */
+    background: rgba(0, 0, 0, 0.93); 
     color: #f1f1f1; 
     width: 100%;
     transition: .7s ease;
@@ -428,7 +428,7 @@ ul li i span{
     padding: 20px;
     width: 35%;
     background: black;
-	box-shadow:0 0 19px #9e5808, 0 0 14px rgb(91, 141, 9), 0 0 35px #d3930b;
+	box-shadow:0 0 6px #9e5808, 0 0 8px rgb(91, 141, 9), 0 0 14px #d3930b;
     text-align: center;
     color:white;
     font-size: 26px;
@@ -493,16 +493,17 @@ footer{
     font-size: 29px;
 }
 #dm{
-    position: absolute;
     display: flex;
-    right: 2%;
-    bottom:20%;
-    padding: 10px;
-    background:rgba(0,0,0,0.3);
-    flex-direction: column;
 }
 .fa-instagram,.fa-facebook-f,.fa-twitter,.fa-linkedin-in{
-    padding: 5px 0px;
-    color:rgba(79, 11, 168, 0.6);
+    padding: 0px 7px;
+    color:#3b3636;
     font-size: 24px;
+    transition: .5s;
+    font-weight: bold;
+}
+.fa-instagram:hover,.fa-facebook-f:hover,.fa-twitter:hover,.fa-linkedin-in:hover{
+    color:#98a80be6;
+    transform:translateY(10px);
+    font-size: 28px;
 }
