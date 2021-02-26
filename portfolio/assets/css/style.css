@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Jockey+One&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
-
+body::-webkit-scrollbar{
+	width: 1rem;
+}
+body::-webkit-scrollbar-thumb{
+	background:#99a80b;
+	border-radius:10%;
+}
+body::-webkit-scrollbar{
+    background:black;
+}
 *{
     padding: 0;
     margin: 0;
@@ -30,6 +39,7 @@ label.logo{
     transform: translate(50%,-50%);
     color:rgb(71, 0, 104);
     line-height:90px;
+    letter-spacing: 4px;
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 1px #99a80b,
     1px 1.1px 1px #99a80b,
@@ -104,7 +114,7 @@ nav #icon{
     display: flex;
     width: 50%;
     font-size: 20px;
-    color: #b039e3;
+    color: rgb(176, 57, 227);
     margin:10px 0px;
     padding: 5px 10px;
     justify-content: center;
@@ -135,6 +145,8 @@ nav #icon{
     padding: 40px 0px;
     color:white;
     text-align: center;
+    z-index: 5;
+    position: relative;
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 8px;
@@ -179,7 +191,9 @@ h2#rgba{
 .txt p{
     color:white;
     padding: 10px;
-    box-shadow:20px 20px 10px black; 
+    box-shadow:5px 5px 2px black; 
+    border:1px transparent;
+    border-radius: 20px;
 }
 .txt span,.naslov1 span{
     color:#99a80b;
@@ -200,9 +214,8 @@ h2#rgba{
     align-items: center;
     border-radius: 5px 5px 20px 20px;
     margin:30px 20px;
-}
-.blok_s:hover{
-    box-shadow: 2px 2px 2px 2px;
+    box-shadow: 0 0 0 rgb(176, 57, 227);
+    animation:peffect 1.9s infinite cubic-bezier(0.993, 0.4, 0.7, 0.5);
 }
 .fa-html5,.fa-css3-alt,.fa-search,.fa-js,.fa-php,.fa-database,.fa-react,.fa-python{
     font-size: 100px;
@@ -210,7 +223,7 @@ h2#rgba{
     color:#99a80b;
     margin: 0px auto 8px auto;
     height: 100px;
-    box-shadow: 3px 2px 1px  rgb(153, 168, 11, 0.7);
+    box-shadow: 3px 2px 1px  #b039e3;
 }
 .blok_s h3{
     color:#99a80b;
@@ -250,7 +263,7 @@ h2#rgba{
 .bar span{
     height: 4px;
     float: left;
-    background-color: #99a80b;
+    background-color: rgb(153, 168, 11);
 }
 span.html{
     width:90%;
@@ -272,7 +285,8 @@ span.html{
     margin: 50px auto;
     display: flex;
     flex-direction: column;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0,0.3);
+    border-radius: 0px 10px 0px 0px ;
 }
 .blok-max{
     flex-grow:2;
@@ -288,6 +302,12 @@ span.html{
     font-size: 23px;
     font-weight: bold;
 }
+.levi h4{
+    border-radius: 5px 10px 10px 0px;
+}
+.desni h4{
+    border-radius: 10px 0px 0px 10px;
+}
 .blok-max p{
     padding: 5px;
     border-right: 5px solid black;
@@ -301,7 +321,7 @@ span.html{
     align-items: flex-end;
 }
 #blok3{
-    background-image: url(../img/pozadina2.jpg);
+    background-image: url(../img/bg3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -309,8 +329,11 @@ span.html{
     height:600px;
     width: 100%;
 }
+.owl-carousel{
+    width: none;
+}
 .carousel-wrapper {
-    width: 900px;
+    width: 100%;
     margin: auto;
   }
 .owl-carousel .owl-nav {
@@ -323,9 +346,9 @@ span.html{
       align-items: center;
       justify-content: center;
       display: flex;
-      padding:20px;
+      padding:20px;   
       border-radius: 2px 2px 8px 8px;
-      box-shadow: 3px 4px 6px 7px rgba(176, 57, 227,0.5);
+      box-shadow: 0px 0px 10px 8px rgba(153, 168, 11, 0.7);
   }
 .owl-carousel .item {
     text-align: center;
@@ -379,14 +402,13 @@ span.html{
     opacity: 1;
   }
   span.bgcl{
-      color:#99a80b;
+      color:rgb(153, 168, 11);
   }
   .overlay p{
     font-size: 17px;
   }
 .padding_{
-    padding: 15px 0px;
-    background:rgb(3, 3, 3);
+    padding: 40px 0px 70px 0px;
 }
 .blok1 ul{
     display: flex;
@@ -411,33 +433,25 @@ ul li i span{
     font-size: 22px;
     text-align: justify;
 }
-#background{
-    background-image: url(../img/poz2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:700px;
-    width: 100%;
-    margin-bottom: 40px;
-    border-radius: 20px;
+#contact{
+    width: 35%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-#contact{
-    padding: 20px;
-    width: 35%;
     background: black;
-	box-shadow:0 0 6px #9e5808, 0 0 8px rgb(91, 141, 9), 0 0 14px #d3930b;
-    text-align: center;
+	box-shadow:0 0 100px #1b1919, 0 0 100px #635a5a, 0 0 200px #000;
     color:white;
-    font-size: 26px;
     border-radius: 15px;
+    padding:20px;
+    margin: 10px auto 0px auto;
+}
+#contact h2{
+    font-size: 40px;
 }
 input,textarea,button{
-    width: 90%;
-    margin: 10px 0px;
-    padding: 5px;
+    width: 95%;
+    padding: 2%;
     background: #3b3636;
     border-radius: 10px;
     border:2px solid #99a80b;
@@ -450,6 +464,7 @@ button{
     margin: 0px;
     padding: 2px;
     background-color: black;
+    margin-top: 20px;
 }
 textarea{
     height: 100px;
@@ -464,7 +479,7 @@ textarea{
 }
 footer{
     width: 100%;
-    background:#3b3636;
+    background:#000000;
     display: flex;
     border-top:3px solid #98a80b;
     justify-content: center;
@@ -497,7 +512,7 @@ footer{
 }
 .fa-instagram,.fa-facebook-f,.fa-twitter,.fa-linkedin-in{
     padding: 0px 7px;
-    color:#3b3636;
+    color:rgba(152, 168, 11, 0.65);;
     font-size: 24px;
     transition: .5s;
     font-weight: bold;

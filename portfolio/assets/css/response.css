@@ -75,6 +75,9 @@
         height: 150px;
         float: left;
     }
+    #contact{
+        width: 50%;
+    }
     .txt p{
         font-size: 16px;
         padding: 5px;
@@ -103,12 +106,6 @@
         padding:10px 0px;
         margin: 0px auto;
      }
-     .fa-phone,.fa-mail-bulk,.fa-map-marker-alt{
-        font-size: 15px;
-    }
-    #contact{
-        width: 60%;
-    }
     .fa-instagram,.fa-facebook-f,.fa-twitter,.fa-linkedin-in{
         padding: 0px 4px;
         font-size: 20px;
@@ -120,6 +117,15 @@
     }
 }
 @media(max-width:590px){
+    label.logo{
+        font-size:28px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    nav #icon{
+        font-size: 24px;
+        margin-right: 20px;
+    } 
     #naslov{
         width: 70%;
         background-color: rgba(0,0,0, 0.85);
@@ -162,24 +168,18 @@
         height: 500px;
     }
     .fa-phone,.fa-mail-bulk,.fa-map-marker-alt{
-        font-size: 12px;
+        font-size: 13px;
     }
     .blok1 .center p{
         padding: 5px;
         font-size: 16px;
     }
     #contact{
-        width: 80%;
-    }
-    #background{
-        height: 500px;
-    }
-    .re-center{
-        width: 100%;
+        width: 65%;
     }
     input,textarea{
         width: 100%;
-        margin: 5px 0px;
+        margin: 0px;
         background: rgb(59, 54, 54);
         border-radius: 10px;
         color:white;
@@ -217,12 +217,12 @@
 @media(max-width:397px){
     label.logo{
         font-size:28px;
-        padding-left: 20px;
-        padding-right: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     nav #icon{
         font-size: 24px;
-        margin-right: 25px;
+        margin-right: 10px;
     } 
     .box{
         width: 50%;
@@ -232,14 +232,22 @@
     }
     .fa-phone,.fa-mail-bulk,.fa-map-marker-alt{
         padding: 0px;
+        font-size: 12px;
+    }
+    #contact{
+        width: 75%;
     }
     .blok1 ul li{
         margin:1px;
     }
     .blok1 .center p{
-        font-size: 14px;
+        font-size: 15px;
     }
     footer p{
-        font-size:12px;
+        font-size:13px;
+    }
+    .naslov1 h2{
+        font-size: 20px;
+        letter-spacing: 2px;
     }
 }
