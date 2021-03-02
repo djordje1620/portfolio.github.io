@@ -109,6 +109,9 @@ nav #icon{
     color: #fff;
     font-size: 40px;
 }
+h1{
+    font-size: 20px; 
+}
 #cv{
     background-color: rgb(255, 255, 255);
     display: flex;
